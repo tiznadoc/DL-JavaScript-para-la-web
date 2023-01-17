@@ -1,4 +1,3 @@
-
 var border = false
 document.getElementById("tere").addEventListener("click", function(){
     if(border){
