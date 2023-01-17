@@ -1,4 +1,4 @@
-var border = false
+var border = true
 document.getElementById("tere").addEventListener("click", function(){
     if(border){
         this.className = "borderless"
