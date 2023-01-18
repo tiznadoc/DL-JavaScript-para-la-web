@@ -44,7 +44,7 @@
             chartContainer.innerHTML = '<canvas id="chart"></canvas>'
             canvas = document.getElementById("chart")
 
-            const labels = dataObject.dates;
+            const labels = dataObject.dates.reverse();
             const data = {
                 type: "line",
                 data: {
@@ -52,7 +52,7 @@
                     datasets:[
                         {
                             label: 'últimos 10 días',
-                            data: dataObject.data,
+                            data: dataObject.data.reverse(),
                             fill: false,
                             borderColor: 'rgb(75, 192, 192)',
                             tension: 0.1 
