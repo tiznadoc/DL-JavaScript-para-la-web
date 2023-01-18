@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Surfboards Store</title>
 </head>
 <body>
     <div class="grid-container">
-        <header class="header box"><h1>Surfing Shop</h1></header>
+        <header class="header box"><h1>Total encontrado: <span id="total"></span> </h1></header>
         <nav class="sidebar box">
-            <ul>
-                <li><h3>Categorias</h3></li>
-                <li>Shortboards</li>
-                <li>Midlenghtboards</li>
-                <li>Longboards</li>
-                <li>Softboards</li>
-                <li>Surfskates</li>
-            </ul>
+            <p>Medida de la tabla</p>
+            <input type="number" id="input">
+            <p>Litros</p>
+            <br>
+            <div class="litros">
+                <div>
+                    <p>desde</p>
+                    <input type="numer" id="min-l">
+                </div>
+                <div>
+                    <p>hasta</p>
+                    <input type="numer" id="max-l">
+                </div>
+            </div>
+            <input type="button" value="Search" id="search">
         </nav>
         <section class="main box">
             <article class="card">
@@ -26,8 +34,8 @@
                     <img src="assets/imgs/inferno-72.jpeg" alt="inferno-72">
                 </div>
                 <div class="card-body">
-                   <h4>SHARPEYE Inferno 72 6'1" 32,4 lts</h4>
-                   <p>$450.000</p>
+                    <h4>SHARPEYE Inferno 72 <span>6'1"</span><span>32,4 lts</span></h4>
+                   <h3>$450.000</h3>
                    <button>Comprar</button>
                 </div>
             </article>
@@ -36,8 +44,8 @@
                     <img src="assets/imgs/inferno-72.jpeg" alt="inferno-72">
                 </div>
                 <div class="card-body">
-                   <h4>SHARPEYE Inferno 72 6'1" 32,4 lts</h4>
-                   <p>$450.000</p>
+                    <h4>SHARPEYE Inferno 72 <span>6'1"</span><span>32,4 lts</span></h4>
+                   <h3>$450.000</h3>
                    <button>Comprar</button>
                 </div>
             </article>
@@ -46,9 +54,9 @@
                     <img src="assets/imgs/inferno-72.jpeg" alt="inferno-72">
                 </div>
                 <div class="card-body">
-                   <h4>SHARPEYE Inferno 72 6'1" 32,4 lts</h4>
-                   <p>$450.000</p>
-                   <button>Comprar</button>
+                    <h4>SHARPEYE Inferno 72 <span>6'1"</span><span>32,4 lts</span></h4>
+                    <h3>$450.000</h3>
+                    <button>Comprar</button>
                 </div>
             </article>
             <article class="card">
@@ -56,9 +64,9 @@
                     <img src="assets/imgs/inferno-72.jpeg" alt="inferno-72">
                 </div>
                 <div class="card-body">
-                   <h4>SHARPEYE Inferno 72 6'1" 32,4 lts</h4>
-                   <p>$450.000</p>
-                   <button>Comprar</button>
+                    <h4>SHARPEYE Inferno 72 <span>6'1"</span><span>32,4 lts</span></h4>
+                    <h3>$450.000</h3>
+                    <button>Comprar</button>
                 </div>
             </article>
             <article class="card">
@@ -66,9 +74,9 @@
                     <img src="assets/imgs/inferno-72.jpeg" alt="inferno-72">
                 </div>
                 <div class="card-body">
-                   <h4>SHARPEYE Inferno 72 6'1" 32,4 lts</h4>
-                   <p>$450.000</p>
-                   <button>Comprar</button>
+                    <h4>SHARPEYE Inferno 72 <span>6'1"</span><span>32,4 lts</span></h4>
+                    <h3>$450.000</h3>
+                    <button>Comprar</button>
                 </div>
             </article>
         </section>
@@ -85,8 +93,29 @@
                 "name": "Surfboard",
                 "description": "responsiva, remadora, vérsatil y radical",
                 "src": "./assets/images/inferno-72.jpg",
-                "liters": "38",
+                "liters": "28",
                 "size": "5'7",
+            },
+            {
+                "name": "Surfboard",
+                "description": "responsiva, remadora, vérsatil y radical",
+                "src": "./assets/images/inferno-72.jpg",
+                "liters": "38",
+                "size": "7",
+            },
+            {
+                "name": "Surfboard",
+                "description": "responsiva, remadora, vérsatil y radical",
+                "src": "./assets/images/inferno-72.jpg",
+                "liters": "34",
+                "size": "6'7",
+            },
+            {
+                "name": "Surfboard",
+                "description": "responsiva, remadora, vérsatil y radical",
+                "src": "./assets/images/inferno-72.jpg",
+                "liters": "33",
+                "size": "6'3",
             },
             {
                 "name": "Surfboard",
@@ -99,36 +128,8 @@
                 "name": "Surfboard",
                 "description": "responsiva, remadora, vérsatil y radical",
                 "src": "./assets/images/inferno-72.jpg",
-                "liters": "38",
-                "size": "5'7",
-            },
-            {
-                "name": "Surfboard",
-                "description": "responsiva, remadora, vérsatil y radical",
-                "src": "./assets/images/inferno-72.jpg",
-                "liters": "38",
-                "size": "5'7",
-            },
-            {
-                "name": "Surfboard",
-                "description": "responsiva, remadora, vérsatil y radical",
-                "src": "./assets/images/inferno-72.jpg",
-                "liters": "38",
-                "size": "5'7",
-            },
-            {
-                "name": "Surfboard",
-                "description": "responsiva, remadora, vérsatil y radical",
-                "src": "./assets/images/inferno-72.jpg",
-                "liters": "38",
-                "size": "5'7",
-            },
-            {
-                "name": "Surfboard",
-                "description": "responsiva, remadora, vérsatil y radical",
-                "src": "./assets/images/inferno-72.jpg",
-                "liters": "38",
-                "size": "5'7",
+                "liters": "32",
+                "size": "6'1",
             }
         ]
 
