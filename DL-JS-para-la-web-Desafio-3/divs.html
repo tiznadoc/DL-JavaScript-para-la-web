@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="box" id="div1" style="background-color: blueviolet"></div>
+    <div class="box" id="div2" style="background-color: greenyellow"></div>
+    <div class="box" id="div3" style="background-color: burlywood"></div>
+    <div class="box" id="div4" style="background-color: green"></div>
+
+    <script>
+        var color
+
+        document.addEventListener("keydown", function(event) {
+            switch(event.key){
+                case "a":
+                    color = "orange"
+                    break
+                case "s":
+                    color = "brown"
+                    break
+                case "d":
+                    color = "yellow"
+                    break
+                default:
+                    color = null
+                    break
+            }
+        })
+        document.getElementById('div1').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+        document.getElementById('div2').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+        document.getElementById('div3').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+        document.getElementById('div4').addEventListener("click", function(event){
+            event.target.style.backgroundColor = color
+        })
+
+    </script>
+</body>
+</html>
