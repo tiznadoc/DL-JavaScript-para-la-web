@@ -12,11 +12,11 @@
     <script>
         element = document.getElementById("ele1")
 
-        function pintar(){
-            element.style.backgroundColor = 'yellow'
+        function pintar(color = "green"){
+            element.style.backgroundColor = color
         }
 
-    element.addEventListener("click", pintar);
+    element.addEventListener("click", () => pintar("yellow"));
     </script>
 </body>
 </html>
