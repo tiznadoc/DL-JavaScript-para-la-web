@@ -70,7 +70,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: calc(100vw - 0.3);
+    height: 80%;
     margin: 0.5rem 1rem;
 }
 
