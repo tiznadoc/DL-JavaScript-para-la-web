@@ -17,12 +17,19 @@ function updateStatus(){
         <tr>
             <td>${index}</td>
             <td>${task.description}</td>
+            <td><input type="checkbox" onclick="completeTask(${index})" ${task.condition ? "checked" : " "}></input></td>
             <td><a class="btn btn-danger" onclick="deleteTask(${index})">eliminar</a></td>
         </tr>
         `
         tasks.innerHTML = tasksHTML
         console.log(array)
     });
+}
+
+function completeTask(id){
+    array[id].condition = true
+    console.log(array)
+    updateStatus()
 }
 
 function deleteTask(id){
