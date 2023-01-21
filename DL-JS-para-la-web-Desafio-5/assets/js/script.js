@@ -22,13 +22,17 @@ function updateStatus(){
         </tr>
         `
         tasks.innerHTML = tasksHTML
-        console.log(array)
     });
+
+    inputTotal.innerText = array.length
+    arrayFilter = array.filter(val => val.condition === true)
+    inputComplete.innerText = arrayFilter.length
+
+
 }
 
 function completeTask(id){
-    array[id].condition = true
-    console.log(array)
+    array[id].condition = array[id].condition ? false : true
     updateStatus()
 }
 
